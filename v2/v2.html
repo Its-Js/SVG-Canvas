@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Drawing Tool with Undo, Redo, Pen, Pan, Lasso Select, Export, and Import</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <button id="penButton" class="active">Pen</button>
+        <button id="panButton">Pan</button>
+        <button id="lassoButton">Lasso</button>
+        <button id="deleteButton" disabled>Delete</button>
+        <button id="undoButton">Undo</button>
+        <button id="redoButton">Redo</button>
+        <input type="file" id="fileInput" style="display: none;">
+        <button id="importButton">Import</button>
+        <button id="exportButton">Export</button>
+    </div>
+    <div id="canvasContainer">
+        <svg id="drawingCanvas" viewBox="0 0 500 500"></svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
